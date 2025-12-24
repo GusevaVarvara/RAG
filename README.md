@@ -24,6 +24,7 @@
 git clone https://github.com/GusevaVarvara/RAG.git
 
 pip install -r requirements.txt
+```
 
 2. Для работы системы необходим ключ Google Gemini API. Перейдите в Google AI Studio: https://aistudio.google.com/. Нажмите "Get API key" и создайте новый ключ.
 
