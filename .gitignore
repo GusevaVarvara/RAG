@@ -1,0 +1,11 @@
+.env
+GOOGLE_API_KEY
+
+faiss_index/
+data/*.pdf
+*.json
+!questions.json
+
+__pycache__/
+venv/
+.ipynb_checkpoints/
