@@ -26,9 +26,7 @@ git clone https://github.com/GusevaVarvara/RAG.git
 pip install -r requirements.txt
 ```
 
-2. Для работы системы необходим ключ Google Gemini API. Перейдите в Google AI Studio: https://aistudio.google.com/. Нажмите "Get API key" и создайте новый ключ.
-
-Используется модель gemini-2.5-flash, у которой присутствуют лимиты на запросы, что учитывается в коде. Файл с ответами создается постепенно, по мере обновления ежедневного лимита.
+2. Для работы системы необходим ключ Google Gemini API. Перейдите в Google AI Studio: https://aistudio.google.com/. Нажмите "Get API key" и создайте новый ключ. Используется модель gemini-2.5-flash, у которой присутствуют лимиты на запросы, что учитывается в коде. Файл с ответами создается постепенно, по мере обновления ежедневного лимита.
 
 3. Поместите исходные PDF-файлы в папку data в корне проекта. Файл с вопросами questions.json должен также находиться в корневой папке.
 
@@ -36,12 +34,16 @@ pip install -r requirements.txt
 
 Для Windows (PowerShell):
 
+```bash
 $env:GOOGLE_API_KEY="ВАШ_КЛЮЧ"
 python main.py
+```
 
 Для Linux/macOS:
 
+```bash
 export GOOGLE_API_KEY="ВАШ_КЛЮЧ"
 python main.py
+```
 
 Скрипт автоматически формирует submission. Если индекс FAISS уже создан (faiss_index), он будет загружен, иначе создастся новый.
